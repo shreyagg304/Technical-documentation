@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+      <ul>
+      <header id="headnav">Python Documentation</header>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Why_Python?">Why Python?</a></li>
+        <li><a class="nav-link" href="#Syntax_and_PIP">Syntax and PIP</a></li>
+        <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+        <li><a class="nav-link" href="#Comments">Comments</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Datatypes">Datatypes</a></li>
+        <li><a class="nav-link" href="#Loops">Loops</a></li>
+        <li><a class="nav-link" href="#Functions">Functions</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <h4>What is python?</h4>
+          <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.It is used for:
+<ul>
+  <li>web development (server-side),</li>
+  <li>software development,</li>
+  <li>mathematics,</li>
+  <li>system scripting.</li>
+</ul>
+</p>
+<h4>What can Python do?</h4>
+<ul>
+  <li>Python can be used on a server to create web applications.</li>
+  <li>Python can be used alongside software to create workflows.</li>
+  <li>Python can connect to database systems. It can also read and modify files.</li>
+  <li>Python can be used to handle big data and perform complex mathematics.</li>
+  <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+</ul>
+        </article>
+    </section>
+    <section class="main-section" id="Why_Python?">
+        <header>Why Python?</header>
+        <article>
+            <ul>
+                <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+                <li>Python has a simple syntax similar to the English language.</li>
+                <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+                <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+                <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+            </ul>
+        </article>
+    </section>
+    <section class="main-section" id="Syntax_and_PIP">
+        <header>Syntax and PIP</header>
+        <article>
+            <p>Python syntax can be executed by writing directly in the Command Line:</p>
+            <code>>>> print("Hello, World!")<br>
+            Hello, World!</code>
+<p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:</p>
+        <code>C:\Users\Your Name>python myfile.py</code>
+        </article>
+    </section>
+    <section class="main-section" id="Hello_World">
+        <header>Hello World</header>
+        <article>
+            <code>print("Hello, World!")</code>
+        </article>
+    </section>
+    <section class="main-section" id="Comments">
+        <header>Comments</header>
+        <article>
+            <ul>
+            <li>Comments can be used to explain Python code.</li>
+            <li>Comments can be used to make the code more readable.</li>
+            <li>Comments can be used to prevent execution when testing code.</li>
+            </ul>
+            <code>#This is a comment<br>
+            print("Hello, World!")</code>
+            <p>To add a multiline comment you could insert a # for each line:</p>
+            <code>#This is a comment<br>
+#written in<br>
+#more than just one line<br>
+print("Hello, World!")</code>
+<p>you can add a multiline string (triple quotes) in your code, and place your comment inside it:</p>
+<code>
+    """<br>
+This is a comment<br>
+written in<br>
+more than just one line<br>
+"""<br>
+print("Hello, World!")
+</code>
+        </article>
+    </section>
+    <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <article>
+            <p>Variables are containers for storing data values.</p>
+            <h4>Creating Variables</h4>
+            <p>Python has no command for declaring a variable.A variable is created the moment you first assign a value to it.</p>
+            <code>
+                x = 5<br>
+y = "John"<br>
+print(x)<br>
+print(y)
+            </code>
+            <h4>Casting</h4>
+            <p>If you want to specify the data type of a variable, this can be done with casting.</p>
+            <code>
+                x = str(3)    # x will be '3'<br>
+y = int(3)    # y will be 3<br>
+z = float(3)  # z will be 3.0<br>
+            </code>
+        </article>
+    </section>
+    <section class="main-section" id="Datatypes">
+        <header>Datatypes</header>
+        <article>
+            <p>In programming, data type is an important concept.Variables can store data of different types, and different types can do different things.</p>
+            <p>Python has the following data types built-in by default, in these categories:</p>
+            <ul>
+                <li>Text Type:  <span>str</span></li>
+                <li>Numeric Types:  <span>int</span>, <span>float</span>, <span>complex</span></li>
+                <li>Sequence Types:  <span>list</span>, <span>tuple</span>, <span>range</span></li>
+                <li>Mapping Type:  <span>dict</span></li>
+                <li>Set Types:  <span>set</span>, <span>frozenset</span></li>
+                <li>Boolean Type:  <span>bool</span></li>
+                <li>Binary Types:  <span>bytes</span>, <span>bytearray</span>, <span>memoryview</span></li>
+                <li>None Type:  <span>NoneType</span></li>
+            </ul>
+        </article>
+    </section>
+    <section class="main-section" id="Loops">
+        <header>Loops</header>
+        <article>
+            <p>In Python, a loop is a control structure that allows you to repeatedly execute a block of code. There are two main types of loops in Python: "for" loops and "while" loops.</p>
+            <ol>
+                <li><b>For Loops:</b></li>
+                <ul>
+                    <li>For loops are used when you know the number of iterations in advance.</li>
+                    <li>They iterate over a sequence (such as a list, tuple, string, or range).</li>
+                </ul>
+                <code>for variable in sequence:<br>
+    # code to be executed in each iteration</code>
+    <code>fruits = ["apple", "banana", "cherry"]<br>
+for fruit in fruits:<br>
+    print(fruit)</code>
+                <li><b>While Loops:</b></li>
+                <ul>
+                    <li>While loops are used when the number of iterations is not known in advance, and the loop continues as long as a certain condition is true.</li>
+                </ul>
+                <code>while condition:<br>
+    # code to be executed as long as the condition is true</code>
+                <code>
+                    count = 0<br>
+while count < 5:<br>
+    print(count)<br>
+    count += 1
+                </code>
+            </ol>
+        </article>
+    </section>
+    <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <article>
+            <ul>
+                <li>A function is a block of code which only runs when it is called.</li>
+                <li>You can pass data, known as parameters, into a function.</li>
+                <li>A function can return data as a result.</li>
+            </ul>
+            <h4>Creating a Function</h4>
+            <p>In Python a function is defined using the def keyword:</p>
+            <code>def my_function():<br>
+  print("Hello from a function")</code>
+            <h4>Calling a Function</h4>
+            <p>To call a function, use the function name followed by parenthesis:</p>
+            <code>my_function()</code>
+        </article>
+    </section>
+    <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+            <p>All the documentation in this page is taken from <a href="https://www.w3schools.com/python/default.asp">here</a></p>
+        </article>
+    </section>
+    </main>
+</body>
+</html>
